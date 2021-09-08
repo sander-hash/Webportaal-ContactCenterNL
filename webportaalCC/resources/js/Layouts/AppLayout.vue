@@ -18,12 +18,10 @@
                                 <jet-nav-link :href="route('dashboard')" :active="route().current('dashboard')">
                                     Dashboard
                                 </jet-nav-link>
-                                <jet-nav-link :href="route('medewerkers')" :active="route().current('medewerkers')">
-                                    Medewerkers
+                                <jet-nav-link :href="route('event')" :active="route().current('event')">
+                                    Event
                                 </jet-nav-link>
-                                <jet-nav-link :href="route('medewerkers')" :active="route().current('medewerkers')">
-                                    Php
-                                </jet-nav-link>
+
 
 
                             </div>

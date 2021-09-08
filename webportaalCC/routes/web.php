@@ -28,10 +28,13 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');
 
-Route::middleware(['auth:sanctum', 'verified'])->get('/medewerkers', function () {
-    return Inertia::render('Medewerkers');
-})->name('medewerkers');
+Route::middleware(['auth:sanctum', 'verified'])->get('/event', function () {
+    return Inertia::render('Event');
+})->name('event');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/event1', function () {
+    return Inertia::render('Event1');
+})->name('event1');
 
 
 Route::get('list', 'App\Http\Controllers\Users@list');
