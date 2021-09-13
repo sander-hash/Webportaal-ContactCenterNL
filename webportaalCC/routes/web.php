@@ -36,6 +36,10 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/event1', function () {
     return Inertia::render('Event1');
 })->name('event1');
 
+Route::middleware(['auth:sanctum', 'verified'])->get('/betalenfilm1', function () {
+    return Inertia::render('Betalenfilm1');
+})->name('betalenfilm1');
+
 
 Route::get('list', 'App\Http\Controllers\Users@list');
 
